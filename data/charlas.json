@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "titulo": "¿Qué hace una autoridad de mesa?",
+    "tema": "Funciones y responsabilidades el día de la elección",
+    "disertante": "Laura Benítez",
+    "fechaHora": "14/10/2026 - 18:00",
+    "sede": {
+      "nombre": "Centro Cultural San Martín",
+      "direccion": "Sarmiento 1551, CABA"
+    }
+  },
+  {
+    "id": 2,
+    "titulo": "Guía del voto inclusivo",
+    "tema": "guía explicativa sobre el voto inclusivo y cómo aplicarlo en la mesa",
+    "disertante": "Juan Cruz Pérez",
+    "fechaHora": "15/10/2026 - 14:30",
+    "sede": {
+      "nombre": "Facultad de Derecho (UBA)",
+      "direccion": "Av. Pres. Figueroa Alcorta 2263, CABA"
+    }
+  },
+  {
+    "id": 3,
+    "titulo": "Apertura de Mesa",
+    "tema": "Armado de urna y cuarto oscuro",
+    "disertante": "Alejandro Martínez",
+    "fechaHora": "15/10/2026 - 17:00",
+    "sede": {
+      "nombre": "Anexo CNE",
+      "direccion": "25 de Mayo 245, CABA"
+    }
+  },
+  {
+    "id": 4,
+    "titulo": "Paso a Paso del Voto",
+    "tema": "Identidad y control de votantes",
+    "disertante": "Sofía Rodríguez",
+    "fechaHora": "16/10/2026 - 16:30",
+    "sede": {
+      "nombre": "Univ. de Belgrano",
+      "direccion": "Zabala 1837, CABA"
+    }
+  },
+  {
+    "id": 5,
+    "titulo": "Manual de fiscales de agrupaciones políticas",
+    "tema": "pautas para desempeñar el rol de fiscal",
+    "disertante": "Carlos Gómez",
+    "fechaHora": "16/10/2026 - 18:30",
+    "sede": {
+      "nombre": "Ex Facultad de Ciencias Sociales - UBA",
+      "direccion": "Marcelo T. de Alvear 2230, CABA"
+    }
+  },
+  {
+    "id": 6,
+    "titulo": "Escrutinio de Mesa",
+    "tema": "Clasificación y conteo de votos",
+    "disertante": "Martín Silva",
+    "fechaHora": "17/10/2026 - 10:00",
+    "sede": {
+      "nombre": "Centro Cultural de la Ciencia",
+      "direccion": "Godoy Cruz 2270, CABA"
+    }
+  },
+  {
+    "id": 7,
+    "titulo": "Cierre y Telegrama",
+    "tema": "Llenado de actas y entrega de urna",
+    "disertante": "Lucía Fernández",
+    "fechaHora": "17/10/2026 - 12:30",
+    "sede": {
+      "nombre": "CC Recoleta",
+      "direccion": "Junín 1930, CABA"
+    }
+  }
+]

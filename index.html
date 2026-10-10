@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal para autoridades de mesa electoral</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <div class="portal">
+    <header class="portal__header">
+      <h1>Portal para autoridades de mesa electoral</h1>
+    </header>
+
+    <div class="portal__banner">
+      <div class="portal__banner__texto">
+        <h3>¿Por qué ser autoridad de mesa electoral?</h3>
+        <p>Ser autoridad de mesa es una responsabilidad cívica que contribuye al funcionamiento democrático del país.
+        </p>
+        <p>Al participar, ayudas a garantizar que las elecciones se lleven a cabo de manera justa y transparente.</p>
+        <h3>Beneficios de ser autoridad de mesa</h3>
+        <p>Algunos de los beneficios incluyen:</p>
+        <p>• Contribuir al proceso democrático y fortalecer la participación ciudadana.</p>
+        <p>• Recibir capacitación y experiencia en la gestión de elecciones.</p>
+        <p>• Posibilidad de recibir compensación económica por tu tiempo y esfuerzo.</p>
+        <p>• Desarrollar habilidades de liderazgo y trabajo en equipo.</p>
+        <h3>Importante</h3>
+        <p>En este sitio usted podrá inscribirse como Postulante para cubrir la función de Autoridad de Mesa.</p>
+        <p>La acción de inscripción NO GARANTIZA que se lo designe como Autoridad de Mesa.</p>
+        <p>Su solicitud será evaluada y la designacion efectiva, de corresponder, le será oportunamente notificada.</p>
+        <p></p>
+      </div>
+    </div>
+
+    <main class="portal__columnas">
+      <section class="columna columna--postulacion" aria-labelledby="titulo-postulacion">
+        <h2 id="titulo-postulacion">¿Te interesa postularte?</h2>
+        <button type="button" class="boton" id="boton-inscripcion">Inscribirse como postulante</button>
+      </section>
+
+      <section class="columna columna--charlas" aria-labelledby="titulo-charlas">
+        <h2 id="titulo-charlas">¡Sumate a nuestras charlas!</h2>
+        <a class="boton" href="lista.html">Información de charlas</a>
+      </section>
+    </main>
+
+    <!-- Pop up del formulario de postulación -->
+    <dialog class="dialogo" id="dialogo-inscripcion" aria-labelledby="titulo-dialogo">
+      <h2 class="dialogo__titulo" id="titulo-dialogo">Inscripción como autoridad de mesa</h2>
+
+      <div class="aviso aviso--error" id="errores-formulario" role="alert" hidden>
+        <p>Revisá estos datos y volvé a intentar:</p>
+        <ul id="lista-errores"></ul>
+      </div>
+
+      <div class="aviso aviso--exito" id="mensaje-exito" role="status" hidden>
+        ¡Listo! Recibimos tu postulación.
+      </div>
+
+      <form id="formulario-inscripcion" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="given-name">
+        </div>
+
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" autocomplete="family-name">
+        </div>
+
+        <div class="campo">
+          <label for="dni">DNI (sin puntos)</label>
+          <input type="text" id="dni" name="dni" inputmode="numeric" maxlength="8">
+        </div>
+
+        <div class="campo">
+          <label for="fechaNacimiento">Fecha de nacimiento</label>
+          <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        </div>
+
+        <div class="campo">
+          <label for="direccion">Dirección actual</label>
+          <input type="text" id="direccion" name="direccion" autocomplete="street-address">
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo de contacto</label>
+          <input type="email" id="correo" name="correo" autocomplete="email">
+        </div>
+
+        <fieldset class="campo-si-no">
+          <legend>¿Ya fuiste autoridad de mesa?</legend>
+          <label><input type="radio" name="fueAutoridad" value="si"> Sí</label>
+          <label><input type="radio" name="fueAutoridad" value="no"> No</label>
+        </fieldset>
+
+        <fieldset class="campo-si-no">
+          <legend>¿Cumpliste la capacitación?</legend>
+          <label><input type="radio" name="cumplioCapacitacion" value="si"> Sí</label>
+          <label><input type="radio" name="cumplioCapacitacion" value="no"> No</label>
+        </fieldset>
+
+        <fieldset class="campo-si-no">
+          <legend>¿Estás afiliado/a a una agrupación política?</legend>
+          <label><input type="radio" name="afiliado" value="si"> Sí</label>
+          <label><input type="radio" name="afiliado" value="no"> No</label>
+        </fieldset>
+
+        <div class="campo">
+          <label for="partido">Partido al que estás afiliado/a (opcional)</label>
+          <input type="text" id="partido" name="partido">
+        </div>
+
+        <fieldset class="campo-si-no">
+          <legend>¿Te interesaría participar en alguna charla de orientación?</legend>
+          <label><input type="radio" name="interesEnCharlas" value="si"> Sí</label>
+          <label><input type="radio" name="interesEnCharlas" value="no"> No</label>
+        </fieldset>
+
+        <div class="dialogo__acciones">
+          <button type="button" class="dialogo__boton dialogo__boton--secundario" id="boton-cerrar">Cerrar</button>
+          <button type="submit" class="dialogo__boton dialogo__boton--principal">Enviar</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="js/validaciones.js"></script>
+    <script src="js/inscripcion.js"></script>
+</body>
+
+</html>

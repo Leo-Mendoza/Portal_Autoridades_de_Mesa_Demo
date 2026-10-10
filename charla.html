@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalle de la charla | Portal para autoridades de mesa electoral</title>
+  <link rel="stylesheet" href="css/charlas-mapa.css">
+</head>
+
+<body>
+  <div class="pagina">
+    <header class="encabezado">
+      <h1><a href="index.html" title="Volver al portal">Portal para autoridades de mesa electoral</a></h1>
+    </header>
+
+    <main class="detalle-charla">
+      <p class="aviso aviso--error" id="mensaje-error" role="alert" hidden></p>
+
+      <article class="detalle-charla__tarjeta" id="detalle-charla" hidden>
+        <h2 class="detalle-charla__titulo" id="charla-titulo"></h2>
+        <dl class="detalle-charla__datos">
+          <dt>Tema</dt>
+          <dd id="charla-tema"></dd>
+          <dt>Disertante</dt>
+          <dd id="charla-disertante"></dd>
+          <dt>Fecha y hora</dt>
+          <dd id="charla-fecha-hora"></dd>
+          <dt>Sede</dt>
+          <dd id="charla-sede-nombre"></dd>
+          <dt>Dirección</dt>
+          <dd id="charla-sede-direccion"></dd>
+        </dl>
+      </article>
+
+      <a class="detalle-charla__volver" href="lista.html">Volver a las charlas</a>
+    </main>
+  </div>
+
+  <script src="js/charlas.js"></script>
+  <script src="js/mensajes.js"></script>
+  <script src="js/charla-detalle.js"></script>
+</body>
+
+</html>

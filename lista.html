@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charlas | Portal para autoridades de mesa electoral</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <link rel="stylesheet" href="css/charlas-mapa.css">
+</head>
+
+<body>
+  <div class="pagina">
+    <header class="encabezado">
+      <h1><a href="index.html" title="Volver al portal">Portal para autoridades de mesa electoral</a></h1>
+    </header>
+
+    <main class="contenido">
+      <section class="panel-lista" aria-label="Listado de charlas">
+
+        <p class="aviso aviso--error" id="mensaje-error" role="alert" hidden></p>
+        <p class="aviso" id="mensaje-vacio" hidden>Por ahora no hay charlas programadas.</p>
+
+        <ul class="lista-charlas" id="lista-charlas"></ul>
+      </section>
+
+      <section class="panel-mapa" aria-label="Mapa con las sedes de las charlas">
+        <p class="estado-mapa" id="estado-mapa" role="status">Ubicando las sedes en el mapa…</p>
+        <div id="mapa"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+
+  <script src="js/charlas.js"></script>
+  <script src="js/usig.js"></script>
+  <script src="js/mensajes.js"></script>
+
+  <script src="js/charlas-mapa.js"></script>
+</body>
+
+</html>
