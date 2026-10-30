@@ -58,6 +58,7 @@ function validarPostulante(postulante) {
     errores.push("El DNI debe tener 7 u 8 números, sin puntos ni espacios.");
   }
   errores.push(validarFechaNacimiento(postulante.fechaNacimiento));
+  if (!postulante.distrito) errores.push("Elegí tu distrito electoral.");
   if (!postulante.direccion) errores.push("Ingresá tu dirección actual.");
   errores.push(validarTelefono(postulante.telefono));
   errores.push(validarCorreo(postulante.correo));
