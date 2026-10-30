@@ -21,6 +21,7 @@ function leerPostulante() {
     apellido: datos.get("apellido").trim(),
     dni: datos.get("dni").trim(),
     fechaNacimiento: datos.get("fechaNacimiento"),
+    distrito: datos.get("distrito"),
     direccion: datos.get("direccion").trim(),
     telefono: datos.get("telefono").trim(),
     correo: datos.get("correo").trim(),
@@ -66,6 +67,7 @@ function manejarEnvio(evento) {
   }
 
   console.log("Postulante inscripto:", postulante);
+  guardarPostulacion(postulante);
   formulario.reset();
   mostrarExito();
 }
